@@ -33,7 +33,7 @@
      local_action:
       get_url
        url=http://mirrors.jenkins.io/war-stable/latest/jenkins.war
-       dest=/home/jenkins.war
+       dest=/home/srinivasan/Desktop/jenkins.war
    - name: Upload Jenkins to Tomcat webapps
      copy:
       src=/home/jenkins.war
