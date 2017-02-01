@@ -28,13 +28,7 @@
       owner=root
       group=root
       recurse=yes
-   - name: Who AM I?
-     shell: whoami
-     register: myout
-   - name: Who am I output
-     debug: var=myout.stdout
    - name: Downloading Jenkins war file
-     sudo: False
      local_action:
       get_url
        url=http://mirrors.jenkins.io/war-stable/latest/jenkins.war
