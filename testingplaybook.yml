@@ -29,7 +29,6 @@
       group=root
       recurse=yes
    - name: Downloading Jenkins war file
-     sudo: yes
      local_action:
       get_url
        url=http://mirrors.jenkins.io/war-stable/latest/jenkins.war
