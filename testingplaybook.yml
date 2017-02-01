@@ -29,13 +29,14 @@
       group=root
       recurse=yes
    - name: Downloading Jenkins war file
+     sudo: False
      local_action:
       get_url
        url=http://mirrors.jenkins.io/war-stable/latest/jenkins.war
-       dest=/home/srinivasan/Desktop/jenkins.war
+       dest=/bin/jenkins.war
    - name: Upload Jenkins to Tomcat webapps
      copy:
-      src=/home/jenkins.war
+      src=/bin/jenkins.war
       dest=/var/lib/tomcat7/webapps/jenkins.war
    - name: Reversing owner of tomcat7 webapps folder to tomcat7
      file:
