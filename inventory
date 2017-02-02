@@ -1,5 +1,5 @@
 [myserver]
-10.0.0.70
+10.0.0.9
 [myserver:vars]
 ansible_ssh_user=vagrant
 ansible_ssh_pass=vagrant
